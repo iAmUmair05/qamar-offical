@@ -1,21 +1,22 @@
 "use client"
 
 import { projectsData } from '@/src/utils/data/projects-data';
-import { skillsImage } from '@/src/utils/skill-image';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 
 const ProductDetail = ({ params }) => {
+
+
     const { projectId } = params;
     
     const project = projectsData?.find((p) => p.id === Number(projectId));
 
     const [hoveredIndex, setHoveredIndex] = useState(null);
-    const [selectedImg, setSelectedImg] = useState(project.images[0]);
+    const [selectedImg, setSelectedImg] = useState(project?.images[0]);
 
     const handleSelectedImg = (index) => {
-        setSelectedImg(project.images[index]);
+        setSelectedImg(project?.images[index]);
     };
 
     if (!project) {
@@ -94,8 +95,8 @@ const ProductDetail = ({ params }) => {
                                             <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-violet-500 to-transparent" />
                                         </div>
                                     </div>
-                                    <div className="flex flex-col items-center justify-center gap-3 p-6">
-                                        <p className="text-amber-300 text-sm sm:text-lg">
+                                    <div className="flex flex-col items-center justify-center gap-2 p-6">
+                                        <p className="text-amber-300 text-center text-sm sm:text-lg">
                                             {tag}
                                         </p>
                                     </div>
