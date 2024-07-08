@@ -9,7 +9,7 @@ import React, { useState } from 'react';
 const ProductDetail = ({ params }) => {
     const { projectId } = params;
     
-    const project = projectsData.find((p) => p.id === Number(projectId));
+    const project = projectsData?.find((p) => p.id === Number(projectId));
 
     const [hoveredIndex, setHoveredIndex] = useState(null);
     const [selectedImg, setSelectedImg] = useState(project.images[0]);
@@ -31,7 +31,7 @@ const ProductDetail = ({ params }) => {
                 className='relative cursor-pointer'
             >
                 <div
-                    onMouseEnter={() => setHoveredIndex(project.id)}
+                    onMouseEnter={() => setHoveredIndex(project?.id)}
                     onMouseLeave={() => setHoveredIndex(null)}
                     className="relative"
                 >
@@ -52,7 +52,7 @@ const ProductDetail = ({ params }) => {
             </Link>
 
             <div className='my-10 flex justify-center gap-4 flex-wrap items-center'>
-                {project.images.slice(0, 6).map((image, index) => (
+                {project?.images?.slice(0, 6).map((image, index) => (
                     <div key={index} onClick={() => handleSelectedImg(index)}>
                         <Image
                             src={image}
@@ -83,7 +83,7 @@ const ProductDetail = ({ params }) => {
                 <h1 className='text-3xl mb-8 sm:text-4xl  font-bold text-center text-pink-500'>
                     Technologies
                 </h1>
-                <div className='w-[70vw] mx-auto flex gap-4 flex-wrap justify-center items-center'>
+                <div className='w-[90vw] mx-auto flex gap-4 flex-wrap justify-center items-center'>
                     {project?.tools?.map((tag, i) => (
                         <div key={i} className="flex gap-4">
                             <div className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.15] cursor-pointer"
