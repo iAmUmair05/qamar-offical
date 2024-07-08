@@ -20,7 +20,7 @@ function ProjectCard({ project }) {
 
                 <div className='grid place-content-center'>
 
-                    <Link href={`projects/${project.id}`} className="text-center cursor-pointer ml-3 text-[#16f2b3] text-base lg:text-xl">
+                    <Link href={`/projects/${project.id}`} className="text-center cursor-pointer ml-3 text-[#16f2b3] text-base lg:text-xl">
                         {project?.title}
                     </Link>
 
@@ -46,13 +46,13 @@ function ProjectCard({ project }) {
                         <span className="text-gray-400">{` ['`}</span>
                         {
                             project?.tools?.map((tag, i) => (
-                                <React.Fragment key={i}>
+                                <div key={i}>
                                     <span className="text-amber-300">{tag}</span>
                                     {
                                         project.tools.length - 1 !== i &&
                                         <span className="text-gray-400">{`', '`}</span>
                                     }
-                                </React.Fragment>
+                                </div>
                             ))
                         }
                         <span className="text-gray-400">{"],"}</span>
