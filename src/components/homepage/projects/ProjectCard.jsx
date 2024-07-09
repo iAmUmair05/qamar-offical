@@ -46,13 +46,13 @@ function ProjectCard({ project }) {
                         <span className="text-gray-400">{` ['`}</span>
                         {
                             project?.tools?.map((tag, i) => (
-                                <div key={i}>
+                                <React.Fragment key={i}>
                                     <span className="text-amber-300">{tag}</span>
                                     {
                                         project.tools.length - 1 !== i &&
                                         <span className="text-gray-400">{`', '`}</span>
                                     }
-                                </div>
+                                </React.Fragment>
                             ))
                         }
                         <span className="text-gray-400">{"],"}</span>

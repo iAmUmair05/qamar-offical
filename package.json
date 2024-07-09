@@ -1,7 +1,7 @@
 {
-  "name": "developer-portfolio",
+  "name": "Qamar-site",
   "description": "Portfolio of Qamar Ashfaq",
-  "homepage":"http://test.falcoq.com",
+  "homepage":"https://qamarashfaq.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
