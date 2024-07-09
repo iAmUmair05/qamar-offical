@@ -3,7 +3,7 @@ const { parse } = require('url');
 const next = require('next');
 
 const dev = process.env.NODE_ENV !== 'production';
-const hostname = '0.0.0.0'; // Use 0.0.0.0 for cPanel
+const hostname = 'localhost'; 
 const port = process.env.PORT || 3000; // Ensure the port is set correctly
 
 // When using middleware `hostname` and `port` must be provided below

@@ -1,6 +1,8 @@
+import { v4 as uuidv4 } from 'uuid';
+
 export const projectsData = [
     {
-        id: 1,
+        id: uuidv4(),
         images: [
             "/project/imlink/1.jpg",
             "/project/imlink/2.png",
@@ -15,7 +17,7 @@ export const projectsData = [
         challenge: "Integrating a wide range of microservices while ensuring seamless communication between them was a complex task. Using Docker and Kubernetes helped manage containerized services efficiently, but it required careful orchestration and monitoring."
     },
     {
-        id: 2,
+        id: uuidv4(),
         images: [
             "/project/character-strong/1.png",
             "/project/character-strong/2.png",
@@ -30,7 +32,7 @@ export const projectsData = [
         challenge: "Ensuring scalability to handle a growing number of users was crucial. Implementing serverless architecture with Lambda Functions and managing infrastructure with Pulumi was essential to meet the demand without compromising performance."
     },
     {
-        id: 3,
+        id: uuidv4(),
         images: [
             "/project/cloud-equate/1.png",
             "/project/cloud-equate/2.png",
@@ -45,7 +47,7 @@ export const projectsData = [
         challenge: "Managing real-time data interactions and ensuring quick load times for users required an efficient backend. Implementing GraphQL with React and Redux, while maintaining data consistency with PostgreSQL and Sequelize, posed a significant challenge."
     },
     {
-        id: 4,
+        id: uuidv4(),
         images: [
             "/project/share-slate/1.png",
             "/project/share-slate/2.png",
@@ -60,7 +62,7 @@ export const projectsData = [
         challenge: "Building a platform that supports both video content and micro-interactions was challenging. Ensuring smooth integration of AI and ML features with video processing required a robust infrastructure supported by MongoDB and AWS services."
     },
     {
-        id: 5,
+        id: uuidv4(),
         images: [
             "/project/mytutor/1.png",
             "/project/mytutor/2.png",
@@ -75,7 +77,7 @@ export const projectsData = [
         challenge: "Incorporating real-time video calls, whiteboard functionality, and chat features across different time zones required robust backend support. Integrating third-party services like Zoom, Twilio, and payment gateways like Stripe and PayPal added complexity to the project."
     },
     {
-        id: 6,
+        id: uuidv4(),
         images: [
             "/project/bring-fresh/1.png",
             "/project/bring-fresh/2.png",
@@ -90,7 +92,7 @@ export const projectsData = [
         challenge: "Revamping the entire frontend to improve the user interface while ensuring compatibility with existing backend services was challenging. Transitioning to React Native and integrating payment methods like PayPal required careful coordination and testing."
     }, 
     {
-        id: 7,
+        id: uuidv4(),
         images: [
             "/project/assetize/1.png",
             "/project/assetize/2.png",
@@ -105,7 +107,7 @@ export const projectsData = [
         challenge: "Developing a real-time funding platform that can handle dynamic data and user interactions required efficient state management. Using Redux with React and ensuring data integrity with PostgreSQL and TypeORM was a key challenge."
     },
     {
-        id: 8,
+        id: uuidv4(),
         images: [
             "/project/shareslate/1.png",
             "/project/shareslate/2.png",
@@ -120,7 +122,7 @@ export const projectsData = [
         challenge: "Implementing a project management tool with a timeline feature demanded precise synchronization of tasks and events. Ensuring real-time updates and handling large datasets with MongoDB and serverless functions posed significant challenges."
     },
     {
-        id: 9,
+        id: uuidv4(),
         images: [
             "/project/rishta-natta/1.png",
             "/project/rishta-natta/2.png",
@@ -135,7 +137,7 @@ export const projectsData = [
         challenge: "Creating a secure and efficient matrimonial platform that handles sensitive user data required robust security measures. Integrating payment solutions and ensuring smooth user interactions with PostgreSQL and Express JS was a major challenge."
     },
     {
-        id: 10,
+        id: uuidv4(),
         images: [
             "/project/chex/1.png",
             "/project/chex/2.png",
